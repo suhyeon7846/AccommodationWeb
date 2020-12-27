@@ -25,7 +25,9 @@ margin: 50px auto 0px auto;
             overflow: hidden;
         }
         .main .title .main-image img{
-            object-fit: fill;
+        width: 500px;
+        heigth:355px;
+          
         }
         .main .title .pic .cliper-btn{
             width: 20px;
@@ -229,7 +231,7 @@ margin: 50px auto 0px auto;
                     }
 
                     .room-form > div {
-                        width: 100px; /* submit 버튼 너비 수정해야함 */
+                        width: 100px; /* submit 踰꾪듉 �꼫鍮� �닔�젙�빐�빞�븿 */
                         margin: 0 auto;
                     }
 
@@ -482,4 +484,6 @@ margin: 50px auto 0px auto;
 
 img{
     object-fit :fill;
+      width:500px;
+      height:355px;
 }

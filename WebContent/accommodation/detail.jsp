@@ -31,7 +31,7 @@
                     <div class="main-img">
 	                    <c:forTokens var="fileRoute" items="${accImage.fileroute}" delims="," varStatus="st">
                         	<c:if test="${st.first == true}">
-	                        	<img src="${fileRoute}" alt=""><br>
+	                        	<img src="${fileRoute}" alt="" ><br>
                         	</c:if>
                        	</c:forTokens>
                     </div>
