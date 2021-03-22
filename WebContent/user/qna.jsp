@@ -57,7 +57,7 @@
 	                        <ol class="qna-sec-list">
 	                        <c:forEach var="q" items="${list}" varStatus="status">
 	                           <li>
-	                             <input type="checkbox" id="${status.index}" class="checkbox" name="check" onclick="doOpenCheck(this);">
+	                             <input type="checkbox" id="${status.index}" class="checkbox" name="check">
 	                                <div>
 	                                    <p>${q.title}</p>
 	                                    <p class="p-detail"><span style="font-size:18px;">내 문의내용:</span><br/><br/>${q.content}</p>

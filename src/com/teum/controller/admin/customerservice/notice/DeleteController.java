@@ -18,11 +18,15 @@ public class DeleteController extends HttpServlet{
 	
 	@Override
 		protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		//id값 가져온다.
 		int id = Integer.parseInt(request.getParameter("id"));
-		
+		//공지사항 서비스 객체 생성
 		NoticeService service = new NoticeService();
-		int result = service.delete(id);
 		
+		//id값에 맞는 데이타를 지운다.
+		service.delete(id);
+		
+		//"list" page를 로딩 
 		response.sendRedirect("list");
 		
 		}

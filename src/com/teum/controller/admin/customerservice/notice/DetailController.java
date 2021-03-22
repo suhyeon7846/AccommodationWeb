@@ -17,9 +17,13 @@ import com.teum.service.NoticeService;
 public class DetailController extends HttpServlet{
 @Override
 protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	// id 값 가져온다.
 	int id = Integer.parseInt(request.getParameter("id"));
 	
+	//공지사항 서비스 객체 생성
 	NoticeService service = new NoticeService();
+	
+	//id에 맞는 공지사항 Notice 객체에 담기.
 	Notice n = service.get(id);
 	
 	request.setAttribute("n", n);
